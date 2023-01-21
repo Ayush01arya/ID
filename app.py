@@ -2,8 +2,12 @@ import streamlit as st
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
-st.set_page_config(page_title="GEHU NSS BTL", page_icon='nss-logo.png' )
+
+
+st.set_page_config(page_title="GEHU NSS BTL", page_icon='nss-logo.png')
 st.info("This Site is only for GEHU NSS UNIT for Bhimtal Campus only")
+
+st.image("GEHU-logo 2.png",width=300)
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
@@ -103,13 +107,17 @@ if uploaded_file is not None:
 
                 # Save the edited image
                 img.save(f"{studentid}.png")
-                st.image(f"{studentid}.png", caption='Download Your NSS ID CARD')
-                st.download_button(
-                    label="Download Your ID CARD",
-                    data=f"{studentid}.png",
-                    file_name=f"{studentid}.png",
-                    mime='image/PNG',
-                )
+                if(fullname and course and nssid and session and studentid and phonenumber and blood and email and add):
+                    st.image(f"{studentid}.png", caption='Download Your NSS ID CARD')
+                    with open(f"{studentid}.png", "rb") as file:
+                        btn = st.download_button(
+                            label="Download image",
+                            data=file,
+                            file_name=f"{studentid}.png",
+                            mime="image/png"
+                        )
+                else:
+                    st.error("Fill all the details ...")
             else:
                 st.error("Enter you name")
         else:
