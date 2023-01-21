@@ -7,7 +7,8 @@ from PIL import ImageFont
 st.set_page_config(page_title="GEHU NSS BTL", page_icon='nss-logo.png')
 st.info("This Site is only for GEHU NSS UNIT for Bhimtal Campus only")
 
-st.image("GEHU-logo 2.png",width=300)
+st.image("GEHU-logo 2.png",width=200)
+
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
@@ -102,7 +103,11 @@ if uploaded_file is not None:
                 I1.text((1264, 92), f"{blood}", font=myFont, fill=(0, 0, 0))
                 I1.text((1264, 144), f"{email}", font=myFont, fill=(0, 0, 0))
                 I1.text((1264, 198), f"{add}, India", font=myFont, fill=(0, 0, 0))
-                I1.text((1264, 299), "only for 13-02-2023", font=myFont, fill=(0, 0, 0))
+                if(studentid=='210111558' or studentid=='210111660' or studentid=='21042224'):
+
+                    I1.text((1264, 299), "For All Event", font=myFont, fill=(0, 0, 0))
+                else:
+                    I1.text((1264, 299), "only for 13-02-2023", font=myFont, fill=(0, 0, 0))
                 # Display edited image
 
                 # Save the edited image
