@@ -104,7 +104,7 @@ if uploaded_file is not None:
                 I1.text((1264, 144), f"{email}", font=myFont, fill=(0, 0, 0))
                 I1.text((1264, 198), f"{add}, India", font=myFont, fill=(0, 0, 0))
                 if(studentid=='210111558' or studentid=='210111660' or studentid=='21042224'):
-                    myFont2 = ImageFont.truetype('arialbd.TTF', 25)
+                    myFont2 = ImageFont.truetype('Indian.otf', 25)
                     I1.text((1264, 299), "For All Event", font=myFont2, fill=(255, 0, 0))
                 else:
                     I1.text((1264, 299), "only for 13-02-2023", font=myFont, fill=(0, 0, 0))
