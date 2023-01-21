@@ -64,7 +64,20 @@ if uploaded_file is not None:
             name = st.text_input("Enter your First Name ")
             name2 = st.text_input("Enter your Last Name ")
             fullname = f"{name.upper()} {name2.upper()}"
-            if (name):
+            if (name and name2):
+                year = st.selectbox('In Which Year you are ? ',('1', '2', '3'))
+                if (year == '1'):
+                    nssid = f"{name[0] + name2[0]}FY{studentid}"
+                    print(nssid)
+                    # print("")
+                elif (year == '2'):
+                    nssid = f"{name[0] + name2[0]}SY{studentid}"
+                elif (year == '3'):
+                    nssid = f"{name[0] + name2[0]}TY{studentid}"
+                elif (year == '4'):
+                    nssid = f"{name[0] + name2[0]}FY{studentid}"
+                else:
+                    print("Invalid")
                 course = st.text_input("Enter your Course Name ")
                 session = st.text_input("Enter your session (eg :-2021-2025)")
 
@@ -78,7 +91,7 @@ if uploaded_file is not None:
                 I1.text((266, 185), f"{fullname}", font=myFont, fill=(0, 0, 0))
                 I1.text((266, 231), f"{course}", font=myFont, fill=(0, 0, 0))
                 myFont = ImageFont.truetype('arial.TTF', 25)
-                I1.text((552, 276), f"{name[0]}{name2[0]}SY{studentid}", font=myFont, fill=(0, 0, 0))
+                I1.text((552, 276), f"{nssid}", font=myFont, fill=(0, 0, 0))
                 I1.text((552, 328), f"{session}", font=myFont, fill=(0, 0, 0))
                 I1.text((552, 380), f"{studentid}", font=myFont, fill=(0, 0, 0))
                 I1.text((1264, 40), f"{phonenumber}", font=myFont, fill=(0, 0, 0))
