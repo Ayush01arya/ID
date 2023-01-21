@@ -2,6 +2,8 @@ import streamlit as st
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
+st.set_page_config(page_title="GEHU NSS BTL", page_icon='nss-logo.png' )
+st.info("This Site is only for GEHU NSS UNIT for Bhimtal Campus only")
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
