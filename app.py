@@ -138,7 +138,7 @@ if uploaded_file is not None:
                     I1.text((266, 231), f"{course}", font=myFont, fill=(0, 0, 0))
                     myFont22 = ImageFont.truetype('Rhuma.ttf', 27)
                     I1.text((552, 276), f"{nssid}", font=myFont22, fill=(0, 0, 0))
-                    myFont = ImageFont.truetype('arial.TTf', 25)
+                    myFont = ImageFont.truetype('arial.TTF', 25)
                     I1.text((552, 328), f"{session}", font=myFont, fill=(0, 0, 0))
                     I1.text((552, 380), f"{studentid}", font=myFont, fill=(0, 0, 0))
                     I1.text((1264, 40), f"{phonenumber}", font=myFont, fill=(0, 0, 0))
