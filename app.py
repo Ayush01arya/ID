@@ -130,7 +130,7 @@ if uploaded_file is not None:
                     phonenumber = st.text_input("Enter your Phone Number ")
                     add = st.text_input("Enter your Address(only city and State )")
                     blood = st.text_input("Enter you Blood Group ")
-                    email = st.text_input("Enmter your E-mail address")
+                    email = st.text_input("Enter your E-mail address")
 
                     # Custom font style and font size
                     myFont = ImageFont.truetype('arialbd.TTF', 28)
