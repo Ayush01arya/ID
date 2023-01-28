@@ -5,7 +5,7 @@ from PIL import ImageFont
 
 
 st.set_page_config(page_title="GEHU NSS BTL", page_icon='nss-logo.png')
-st.info("This Site is only for GEHU NSS UNIT for Bhimtal Campus only",icon="ℹ️")
+st.info("This Site is only for GEHU NSS UNIT for Bhimtal Campus only")
 
 st.image("GEHU-logo 2.png",width=200)
 
