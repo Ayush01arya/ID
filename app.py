@@ -5,7 +5,7 @@ from PIL import ImageFont
 
 
 st.set_page_config(page_title="GEHU NSS BTL", page_icon='nss-logo.png')
-st.info("This Site is only for GEHU NSS UNIT for Bhimtal Campus only")
+st.info("This Site is only for GEHU NSS UNIT for Bhimtal Campus only",icon="ℹ️")
 
 st.image("GEHU-logo 2.png",width=200)
 
@@ -149,7 +149,7 @@ if uploaded_file is not None:
                         myFont2 = ImageFont.truetype('Indian.otf', 25)
                         I1.text((1264, 299), "For All Event", font=myFont2, fill=(255, 0, 0))
                     else:
-                        I1.text((1264, 299), "I#N#V#A#L#I#D", font=myFont, fill=(0, 0, 0))
+                        I1.text((1264, 299), "[16-02-2023]", font=myFont, fill=(0, 0, 0))
                     # Display edited image
 
                     # Save the edited image
