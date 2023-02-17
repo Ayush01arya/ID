@@ -149,7 +149,7 @@ if uploaded_file is not None:
                         myFont2 = ImageFont.truetype('Indian.otf', 25)
                         I1.text((1264, 299), "For All Event", font=myFont2, fill=(255, 0, 0))
                     else:
-                        I1.text((1264, 299), "[16-02-2023]", font=myFont, fill=(0, 0, 0))
+                        I1.text((1264, 299), "***I#N#V#AL#I#D***", font=myFont, fill=(0, 0, 0))
                     # Display edited image
 
                     # Save the edited image
